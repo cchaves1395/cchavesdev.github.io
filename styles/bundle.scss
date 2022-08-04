@@ -1,0 +1,16 @@
+@import "components/atoms";
+@import "components/tipography";
+@import "components/box-model";
+@import "components/cards";
+@import "components/images";
+@import "components/table";
+@import "components/header";
+@import "components/forms";
+@import "components/footer";
+
+//General
+body {
+  font-family: $radio-canada-regular;
+  color: $p-color;
+  background-color: $light1;
+}

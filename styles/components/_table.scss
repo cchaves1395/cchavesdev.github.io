@@ -1,0 +1,20 @@
+.table-yellow{
+    & thead{
+        border-top: 2px solid $yellow;
+        border-bottom: 2px solid $yellow;
+        font-family: $radio-canada-semibold;
+
+        & th{
+            padding: 24px 32px;
+        }
+    }
+
+    & tbody{
+        font-size: 18px;
+        border-bottom: 1px solid rgba($color: #707070, $alpha: .2);
+
+        & td{
+            padding: 20px 32px;
+        }
+    }
+}

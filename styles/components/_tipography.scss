@@ -1,0 +1,140 @@
+@font-face {
+  font-family: $radio-canada-regular;
+  src: url(../fonts/RadioCanada-Regular.ttf);
+}
+@font-face {
+  font-family: $radio-canada-bold;
+  src: url(../fonts/RadioCanada-Bold.ttf);
+}
+@font-face {
+  font-family: $radio-canada-light;
+  src: url(../fonts/RadioCanada-Light.ttf);
+}
+@font-face {
+  font-family: $radio-canada-semibold;
+  src: url(../fonts/RadioCanada-SemiBold.ttf);
+}
+
+.text-regular{
+    font-family: $radio-canada-regular;
+}
+strong {
+  font-family: $radio-canada-bold;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+//headings
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 32px;
+}
+h5 {
+  font-size: 24px;
+  font-family: $radio-canada-semibold;
+}
+
+//Links
+
+.link-yellow {
+  color: $yellow;
+  text-decoration: underline;
+  &:hover{
+    color: $yellow;
+  }
+}
+.link-red {
+  color: $red;
+  text-decoration: underline;
+  &:hover{
+    color: $red;
+  }
+}
+
+//list
+.list-circle {
+  padding-left: 15px;
+  & li {
+    position: relative;
+    padding-left: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  li::before {
+    content: "";
+    height: 11px;
+    width: 11px;
+    background-color: $red;
+    border-radius: 11px;
+    position: absolute;
+    left: -0.8em; /* Adjust this value so that it appears where you want. */
+    font-size: 1.1em; /* Adjust this value so that it appears what size you want. */
+  }
+}
+
+.list-number {
+  list-style: decimal;
+  padding-left: 15px;
+  font-size: 18px;
+  & li {
+    padding-left: 10px;
+  }
+  & li::marker {
+    color: $red;
+  }
+}
+
+.list-circle-yellow {
+  padding-left: 15px;
+  & li {
+    position: relative;
+    padding-left: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  li::before {
+    content: "";
+    height: 11px;
+    width: 11px;
+    background-color: $yellow;
+    border-radius: 11px;
+    position: absolute;
+    left: -0.8em; /* Adjust this value so that it appears where you want. */
+    font-size: 1.1em; /* Adjust this value so that it appears what size you want. */
+  }
+}
+
+.list-number-yellow {
+  list-style: decimal;
+  padding-left: 15px;
+  font-size: 18px;
+  & li {
+    padding-left: 10px;
+  }
+  & li::marker {
+    color: $yellow;
+  }
+}
+
+//Others
+p {
+  font-size: 18px;
+}
+blockquote {
+  font-family: $radio-canada-light;
+  font-size: 18px;
+}
