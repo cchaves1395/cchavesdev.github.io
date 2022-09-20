@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/bundle.css" />
+    <title>Page 3</title>
+  </head>
+  <body class="bg-white">
+    <!-- HEADER -->
+    <header>
+      <div class="container-xxl py-4">
+        <div class="row justify-content-between">
+          <div
+            class="col-3 col-lg-2 menu-nav col-xxl-1 d-flex align-items-center justify-content-between"
+          >
+            <button
+              class="hamburger-menu btn-trigger headerFn"
+              data-triger="main-nav"
+            >
+              <img src="img/hamburger.svg " alt="Hamburger button icon" />
+            </button>
+            <button class="search-btn">
+              <img src="img/search.svg" alt="Search icon" />
+            </button>
+          </div>
+          <div
+            class="col-3 d-flex justify-content-end justify-content-lg-center logo-container"
+          >
+            <a href="#" class="logo">
+              <img src="img/logo.svg" alt="Logo Windham" />
+            </a>
+          </div>
+          <div
+            class="col-lg-8 d-flex align-items-center justify-content-end gap-2 secundary-nav"
+          >
+            <button class="btn-trigger headerFn" data-triger="snow-report">
+              SNOW REPORT
+            </button>
+            <button
+              class="main-button btn-trigger headerFn"
+              data-triger="book-now"
+            >
+              BOOK NOW
+            </button>
+          </div>
+          <div class="col-3 close-menu d-flex justify-content-end d-none">
+            <button><img src="img/x-icon.svg" alt="Close icon" /></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Open Menu -->
+      <div class="main-menu div-trigger" data-triger="main-nav">
+        <div class="container-xxl">
+          <div class="row justify-content-center">
+            <nav class="col-12 col-md-6">
+              <ul>
+                <li class="dropdown-item-submenu">
+                  <span
+                    >On the Mountain
+                    <img src="img/up-blue.svg" alt="Up arrow image"
+                  /></span>
+                  <ul>
+                    <li><a href="">Conditions</a></li>
+                    <li><a href="">Webcams</a></li>
+                    <li><a href="">Trail Map</a></li>
+                    <li><a href="">Terrain Parks</a></li>
+                    <li><a href="">Mountain Stats</a></li>
+                    <li><a href="">Mountain Stories</a></li>
+                    <li><a href="">Uphill Access</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-item-submenu">
+                  <span
+                    >Plan and Book
+                    <img src="img/up-blue.svg" alt="Up arrow image"
+                  /></span>
+                  <ul>
+                    <li><a href="">Conditions</a></li>
+                    <li><a href="">Webcams</a></li>
+                    <li><a href="">Trail Map</a></li>
+                    <li><a href="">Terrain Parks</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-item-submenu">
+                  <span
+                    >During your Visit
+                    <img src="img/up-blue.svg" alt="Up arrow image"
+                  /></span>
+                  <ul>
+                    <li><a href="">Conditions</a></li>
+                    <li><a href="">Webcams</a></li>
+                    <li><a href="">Trail Map</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-sections">
+        <!-- BOOK NOW FORM-->
+        <div
+          class="hide-container div-trigger position-relative"
+          data-triger="book-now"
+        >
+          <form action="">
+            <div class="container-xxl">
+              <div class="row justify-content-center">
+                <div class="col-md-3 mt-4 mt-lg-0">
+                  <div class="date-input">
+                    <input
+                      type="date"
+                      name="arribal"
+                      id="arribal"
+                      placeholder="Arribal"
+                      class="form-control input-blue"
+                    />
+                    <label for="arribal">Arribal</label>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-4 mt-lg-0">
+                  <div class="date-input">
+                    <input
+                      type="date"
+                      name="departure"
+                      id="departure"
+                      placeholder="Departure"
+                      class="form-control input-blue"
+                    />
+                    <label for="departure">Departure</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-4">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      name="adults"
+                      id="adults"
+                      placeholder="Adults"
+                      class="form-control input-blue"
+                    />
+                    <button type="button">
+                      <img src="img/plus-blue.svg" alt="Plus icon" />
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-4 mt-lg-0">
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      name="children"
+                      id="children"
+                      placeholder="Children"
+                      class="form-control input-blue"
+                    />
+                    <button type="button">
+                      <img src="img/plus-blue.svg" alt="Plus icon" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center pt-5 btn-bookNow">
+                <div class="col-md-6 d-flex justify-content-end">
+                  <button type="submit" class="main-button">BOOK NOW</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- SNOW REPORT -->
+        <div class="hide-container div-trigger" data-triger="snow-report">
+          <div class="container-xxl">
+            <div class="row justify-content-center">
+              <div class="col-md-7">
+                <h2 class="f-36 text-center text-lg-start">Today’s Weather</h2>
+                <div class="row justify-content-between mt-5">
+                  <div
+                    class="col-md-5 d-flex justify-content-between pe-0 pe-lg-5"
+                  >
+                    <div
+                      class="d-flex flex-column justify-content-between text-center info-snow-report"
+                    >
+                      <p class="item">HIGH</p>
+                      <p class="value">29º</p>
+                    </div>
+                    <img class="py-3" src="img/snow-icon.svg" alt="Snow icon" />
+                    <div
+                      class="d-flex flex-column justify-content-between text-center info-snow-report"
+                    >
+                      <p class="item">LOW</p>
+                      <p class="value">20º</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2 d-flex justify-content-center">
+                    <div class="line border-r-blue"></div>
+                  </div>
+
+                  <div class="col-md-5 mt-5 mt-lg-0">
+                    <div class="d-flex justify-content-between">
+                      <div
+                        class="info-snow-report d-flex align-items-center flex-column flex-lg-row"
+                      >
+                        <p class="item">Lift</p>
+                        <p class="value pl-2">5</p>
+                      </div>
+                      <div
+                        class="info-snow-report d-flex align-items-center flex-column flex-lg-row"
+                      >
+                        <p class="item">NEW SNOW</p>
+                        <p class="value pl-2">6”</p>
+                      </div>
+                      <div
+                        class="info-snow-report d-flex align-items-center flex-column flex-lg-row"
+                      >
+                        <p class="item">TRAIL</p>
+                        <p class="value pl-2">49</p>
+                      </div>
+                    </div>
+                    <button class="main-button float-end full-report">
+                      FULL REPORT
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- HERO -->
+    <div class="hero-container hero">
+      <div class="buttons d-flex d-lg-none flex-column">
+        <button
+          class="btn-trigger headerFn text-white"
+          data-triger="snow-report"
+        >
+          SNOW REPORT
+        </button>
+        <button
+          class="main-button btn-trigger headerFn btn-white mt-3 mb-5"
+          data-triger="book-now"
+        >
+          BOOK NOW
+        </button>
+      </div>
+      <div class="hero-info">
+        <h2 class="secondary-title">Promo Title</h2>
+        <p class="mt-24">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+        <a href="#" class="secondary-button mt-50">BOOK NOW</a>
+      </div>
+    </div>
+    <!-- HERO END -->
+
+    <!-- CARDS LIST -->
+    <div class="card-primary">
+      <h2>Promo Title a Bit Larger</h2>
+      <hr class="hr-blue" />
+      <p class="lh-36">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata
+      </p>
+
+      <!-- Slider -->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/slider.jpg"
+              class="d-block w-100"
+              alt="slider image"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/slider.jpg"
+              class="d-block w-100"
+              alt="slider image"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/slider.jpg"
+              class="d-block w-100"
+              alt="slider image"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- CARDS LIST END -->
+
+    <!-- FOOTER -->
+    <footer class="mt-footer">
+      <div class="container-xxl">
+        <div class="row justify-content-between">
+          <div class="col-md-3 text-center text-md-start">
+            <h4>Follow Us</h4>
+
+            <div class="d-flex justify-content-between">
+              <a href="#">
+                <img src="img/instagram.svg" alt="Instagram Icon" />
+              </a>
+              <a href="#">
+                <img src="img/facebook.svg" alt="Facebook Icon" />
+              </a>
+              <a href="#">
+                <img src="img/twiter.svg" alt="Twiter Icon" />
+              </a>
+              <a href="#">
+                <img src="img/youtube.svg" alt="Youtube Icon" />
+              </a>
+            </div>
+
+            <h4 class="mt-5">Contact Info</h4>
+
+            <p class="mt-5">19 Resort Drive</p>
+            <p>Windham, NY 12496</p>
+
+            <p class="mt-5">1.800.754.9463</p>
+            <p>info@windhammountain.com</p>
+          </div>
+
+          <div
+            class="col-md-8 col-xxl-6 d-flex flex-column justify-content-between"
+          >
+            <div class="row text-center text-md-start mt-5 mt-md-0">
+              <div class="col-md-4 d-flex flex-column">
+                <h4>Navigation</h4>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+              </div>
+              <div class="col-md-4 d-flex flex-column mt-4 mt-md-0">
+                <h4>Navigation</h4>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+              </div>
+              <div class="col-md-4 d-flex flex-column mt-4 mt-md-0">
+                <h4>Navigation</h4>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+              </div>
+            </div>
+            <div class="text-center text-md-start mt-5 mt-md-0">
+              <h4>Keep in Touch</h4>
+              <form action="" class="d-flex flex-column flex-md-row gap-4 mt-4">
+                <input
+                  type="email"
+                  class="form-control w-100 input-blue mt-1"
+                  placeholder="Email"
+                />
+                <button type="submit" class="main-button mx-auto">
+                  SUBSCRIBE
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-darkBlue py-4">
+        <img
+          src="img/white-logo.svg"
+          class="mx-auto d-block"
+          alt="White logo"
+        />
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

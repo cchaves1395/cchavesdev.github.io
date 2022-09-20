@@ -1,0 +1,175 @@
+
+
+@font-face {
+  font-family: $noto-sans-regular;
+  src: url(../fonts/NotoSans-Regular.ttf);
+}
+@font-face {
+  font-family: $noto-sans-light;
+  src: url(../fonts/NotoSans-Light.ttf);
+}
+@font-face {
+  font-family: $noto-sans-bold;
+  src: url(../fonts/NotoSans-Bold.ttf);
+}
+@font-face {
+  font-family: $gilroy;
+  src: url(../fonts/Gilroy-Light.otf);
+}
+@font-face {
+  font-family: $white-oleander;
+  src: url(../fonts/WhiteOleander.ttf);
+}
+
+
+.text-regular{
+    font-family: $noto-sans-regular;
+}
+.gilroy{
+  font-family: $gilroy;
+}
+strong {
+  font-family: $noto-sans-bold;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+p{
+  line-height: 32px;
+}
+//headings
+h1, h2 , h3, h4, h5 , h6{
+  font-family: $gilroy;
+}
+
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 48px;
+
+  & span{
+    font-size: 24px;
+  }
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 32px;
+}
+h5 {
+  font-size: 24px;
+}
+
+.secondary-title{
+  font-family: $white-oleander;
+}
+
+//sizes
+.f-36{
+  font-size: 36px;
+}
+
+//Links
+
+.link-orange {
+  color: $orange;
+  text-decoration: underline;
+  &:hover{
+    color: $orange;
+  }
+}
+.link-blue {
+  color: #3D6EB2;
+  text-decoration: underline;
+  &:hover{
+    color: #3D6EB2;
+  }
+}
+
+//list
+.list-circle {
+  padding-left: 15px;
+  & li {
+    position: relative;
+    padding-left: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  li::before {
+    content: "";
+    height: 11px;
+    width: 11px;
+    background-color: $red;
+    border-radius: 11px;
+    position: absolute;
+    left: -0.8em; /* Adjust this value so that it appears where you want. */
+    font-size: 1.1em; /* Adjust this value so that it appears what size you want. */
+  }
+}
+
+.list-number {
+  list-style: decimal;
+  padding-left: 15px;
+  font-size: 18px;
+  & li {
+    padding-left: 10px;
+  }
+  & li::marker {
+    color: $red;
+  }
+}
+
+.list-circle-yellow {
+  padding-left: 15px;
+  & li {
+    position: relative;
+    padding-left: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  li::before {
+    content: "";
+    height: 11px;
+    width: 11px;
+    background-color: $yellow;
+    border-radius: 11px;
+    position: absolute;
+    left: -0.8em; /* Adjust this value so that it appears where you want. */
+    font-size: 1.1em; /* Adjust this value so that it appears what size you want. */
+  }
+}
+
+.list-number-yellow {
+  list-style: decimal;
+  padding-left: 15px;
+  font-size: 18px;
+  & li {
+    padding-left: 10px;
+  }
+  & li::marker {
+    color: $yellow;
+  }
+}
+
+//Others
+p {
+  font-size: 18px;
+}
+blockquote {
+  font-family: $noto-sans-light;
+  font-size: 18px;
+}
+
+
+//line height
+.lh-36{
+  line-height: 36px;
+}

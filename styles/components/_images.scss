@@ -1,0 +1,40 @@
+.hero-container {
+  background-color: white;
+  font-size: 126px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 860px;
+}
+
+
+
+
+
+@mixin img($width, $height) {
+  max-width: $width;
+  width: 100%;
+  background-color: white;
+  height: $height;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.listing-images {
+  @include img(445px, 400px);
+}
+.slideshow-images {
+  @include img(1400px, 650px);
+}
+
+@media (max-width: 635px) {
+  .hero-container {
+    font-size: 50px;
+    height: max-content;
+    min-height: 812px;
+  }
+ 
+}
